@@ -1,0 +1,42 @@
+{
+  "buttons": {
+    "login": "Log in",
+    "register": "Sign up",
+    "join": "Join for free!"
+  },
+  "links": {
+    "termsOfUse": "Terms of use",
+    "privacyPolicy": "Privacy policy"
+  },
+  "index": {
+    "main": {
+      "greeting1": "Fatodo helps not to forget about important",
+      "greeting2": "and to work in a team"
+    },
+    "bullets": {
+      "title1": "Like a social network, but fo achieving goals",
+      "text1": "Create task lists, share them, and discuss their fulfillment in comments and chat rooms.",
+      "title2": "Do not forget anything",
+      "text2": "A convenient alert system with the possibility of notifications by e-mail will remind you of important dates and events.",
+      "title3": "Set priorities",
+      "text3": "You choose what tasks to do in the first place, and you will not get down."
+    },
+    "cards1": {
+      "title": "It's time to do the best",
+      "bullet1": "Create task lists for yourself and plan your day as efficiently as possible.",
+      "bullet2": "Share tasks and do them faster together with friends and colleagues.",
+      "bullet3": "Exchange ideas in comments and messages, find effective ways to achieve your goals."
+    },
+    "cards2": {
+      "title": "Easy and understandable interface",
+      "bullet1": "It was never so easily to handle task lists.",
+      "bullet2": "Detish tasks in priority.",
+      "bullet3": "Control the execution using the reminder system.",
+      "text": "All the most important will always remain before your eyes."
+    },
+    "cards3": {
+      "title": "Mobile app is coming soon...",
+      "text": "Soon the Fatodo assistant will become even more affordable, always in your pocket!"
+    }
+  }
+}

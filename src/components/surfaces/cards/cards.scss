@@ -1,0 +1,16 @@
+@import "src/constants";
+
+.cards {
+  padding-top: 100px;
+  padding-bottom: 100px;
+
+  &__item {
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    & > * {
+      display: flex;
+      height: 100%;
+    }
+  }
+}
