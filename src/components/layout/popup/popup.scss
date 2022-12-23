@@ -1,0 +1,46 @@
+@import "src/constants";
+
+.popup {
+  position: relative;
+
+  &__container {
+    z-index: 200;
+    position: absolute;
+  }
+
+  &__content {
+    position: relative;
+    padding: 5px 8px;
+    border-radius: 8px;
+    overflow: hidden;
+
+    &__bg {
+      z-index: -10;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+
+      &--white {
+        background: white;
+      }
+
+      &--turquoise {
+        background: $turquoise-blue-gradient;
+        opacity: 0.4;
+      }
+    }
+
+  }
+
+  &__backdrop {
+    z-index: 100;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+  }
+
+}

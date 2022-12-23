@@ -1,0 +1,39 @@
+@import 'src/constants';
+
+.stack {
+  display: flex;
+  align-items: center;
+
+  &--row {
+    flex-direction: row;
+  }
+
+  &--column {
+    flex-direction: column;
+  }
+
+  &--sm {
+    margin: -$default-space / 2 + px;
+
+    & > * {
+      margin: $default-space / 2 + px;
+    }
+  }
+
+  &--md {
+    margin: -$default-space + px;
+
+    & > * {
+      margin: $default-space + px;
+    }
+  }
+
+  &--lg {
+    margin: -$default-space / 2 * 3 + px;
+
+    & > * {
+      margin: $default-space / 2 * 3 + px;
+    }
+  }
+
+}

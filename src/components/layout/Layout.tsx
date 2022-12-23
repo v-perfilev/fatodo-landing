@@ -1,12 +1,8 @@
-import * as React from 'react';
-import { ReactNode } from 'react';
-
+import React, { ReactNode } from 'react';
 import '../../styles.scss';
-import Header from './Header';
-import Footer from './Footer';
-import { ThemeProvider } from '@mui/material';
-import { yellowTheme } from '../../shared/theme';
-import Background from './Background';
+import Container from './container/Container';
+import { AlarmCheckIcon } from '../icons/AlarmCheckIcon';
+import Header from './header/Header';
 
 type LayoutProps = {
   children: ReactNode;
@@ -14,12 +10,14 @@ type LayoutProps = {
 
 const Layout = ({ children }: LayoutProps) => {
   return (
-    <ThemeProvider theme={yellowTheme}>
-      <Background />
+    <>
       <Header />
+      <Container>
+        <AlarmCheckIcon />
+        <div style={{ width: '100%', height: '1000px', background: 'red' }} />
+      </Container>
       <main>{children}</main>
-      <Footer />
-    </ThemeProvider>
+    </>
   );
 };
 

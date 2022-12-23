@@ -1,0 +1,49 @@
+@import "src/constants";
+
+.header {
+  position: fixed;
+  width: 100%;
+  height: 60px;
+  background: $white-color;
+  padding-top: 5px;
+
+  &__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo {
+    position: relative;
+    height: 50px;
+
+    &__content {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+
+  &__buttons {
+    height: 50px;
+    display: flex;
+    align-items: center;
+  }
+}
+
+.logo-with-text {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  &__img {
+    margin-right: $default-space + px;
+  }
+
+  &__span {
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    color: $turquoise-color;
+  }
+}
