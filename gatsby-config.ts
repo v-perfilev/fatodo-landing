@@ -11,6 +11,7 @@ const config: GatsbyConfig = {
   plugins: [
     'gatsby-plugin-sass',
     'gatsby-plugin-image',
+    'gatsby-theme-material-ui',
     'gatsby-transformer-sharp',
     {
       resolve: `gatsby-plugin-sharp`,

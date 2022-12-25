@@ -1,10 +1,8 @@
 import React from 'react';
-import { SvgIcon, SvgIconParams } from './SvgIcon';
+import { SvgIcon, SvgIconProps } from '@mui/material';
 
-export const MenuIcon = (props: SvgIconParams) => (
+export const MenuIcon = (props: SvgIconProps) => (
   <SvgIcon {...props}>
-    <svg viewBox="0 0 24 24" xmlns="<http://www.w3.org/2000/svg>">
-      <path fill="currentColor" d="M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z" />
-    </svg>
+    <path fill="currentColor" d="M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z" />
   </SvgIcon>
 );

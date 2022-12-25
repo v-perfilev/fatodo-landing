@@ -1,0 +1,37 @@
+@import "src/constants";
+
+.bullets {
+  display: flex;
+  width: 100%;
+  margin-top: 100px;
+
+  &__image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    &__container {
+      position: relative;
+      width: 80%;
+      max-width: 300px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &__bg {
+      z-index: -10;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 220%;
+      height: 160%;
+      margin-left: -60%;
+      margin-top: -60%;
+      background-image: url("/images/phone-bg.png");
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+    }
+  }
+}
