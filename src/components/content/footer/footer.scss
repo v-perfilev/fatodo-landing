@@ -3,7 +3,7 @@
 .footer {
   position: relative;
   height: 200px;
-  margin-top: 100px;
+  margin-top: 150px;
   background: $turquoise-blue-gradient;
 
   &__container {
@@ -37,6 +37,7 @@
   }
 
   &__links > * {
+    font-size: 14px;
     color: $white-color;
 
     &:hover {
@@ -60,6 +61,6 @@
     top: 0;
     left: 0;
     background: $black-color;
-    opacity: 0.8;
+    opacity: 0.6;
   }
 }

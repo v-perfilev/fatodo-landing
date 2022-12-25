@@ -4,7 +4,7 @@ import './footer.scss';
 import LogoImg from '../../images/LogoImg';
 import { Link } from 'gatsby';
 import GooglePlayImg from '../../images/GooglePlayImg';
-import AppStoreImg from '../../images/AppStoreImg';
+import AppleStoreImg from '../../images/AppleStoreImg';
 
 const FooterStores = () => {
   return (
@@ -13,7 +13,7 @@ const FooterStores = () => {
         <GooglePlayImg />
       </Link>
       <Link className="footer__stores__link" to="https://yandex.ru">
-        <AppStoreImg />
+        <AppleStoreImg />
       </Link>
     </Stack>
   );

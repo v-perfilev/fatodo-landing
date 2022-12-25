@@ -3,22 +3,58 @@
 .bullets {
   display: flex;
   width: 100%;
-  margin-top: 100px;
+  margin-top: 150px;
+
+  &__container {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__text {
+    width: 100%;
+    max-width: 350px;
+  }
+
+  &__title {
+    font-size: 30px !important;
+    font-weight: 600 !important;
+
+    &--blue {
+      color: $blue-color;
+    }
+
+    &--yellow {
+      color: $yellow-color;
+    }
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+
+    &__dot {
+      flex-shrink: 0;
+      width: 20px;
+      height: 20px;
+      border-radius: 10px;
+      background: $turquoise-blue-gradient;
+    }
+
+    &__text {
+      font-size: 16px !important;
+      color: $black-color;
+    }
+  }
 
   &__image {
+    position: relative;
+    width: 80%;
+    max-width: 300px;
     display: flex;
     justify-content: center;
     align-items: center;
-
-
-    &__container {
-      position: relative;
-      width: 80%;
-      max-width: 300px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
 
     &__bg {
       z-index: -10;
