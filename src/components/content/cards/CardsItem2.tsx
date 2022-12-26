@@ -1,6 +1,7 @@
+import './cards.scss';
+
 import React from 'react';
 import { Box, Stack, Typography } from '@mui/material';
-import './cards.scss';
 import { PeopleIcon } from '../../icons/PeopleIcon';
 import { useI18next } from 'gatsby-plugin-react-i18next';
 

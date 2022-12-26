@@ -4,6 +4,7 @@ import './cards.scss';
 import GooglePlayImg from '../../images/GooglePlayImg';
 import AppleStoreImg from '../../images/AppleStoreImg';
 import QrImg from '../../images/QrImg';
+import { Link } from 'gatsby';
 
 const CardsItem1 = () => {
   return (
@@ -19,9 +20,9 @@ const CardsItem1 = () => {
         </Stack>
         <Box className="cards__item--item1__column">
           <Box className="cards__item--item1__qr">
-            <a href="https://yandex.ru">
+            <Link to="/app-store-detector">
               <QrImg />
-            </a>
+            </Link>
           </Box>
         </Box>
       </Stack>

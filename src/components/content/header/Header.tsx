@@ -1,9 +1,10 @@
+import './header.scss';
+
 import React from 'react';
 import Logo from '../../layout/logo/Logo';
 import { Box, Container, Stack } from '@mui/material';
 import HeaderLanguageSelect from './HeaderLanguageSelect';
 import HeaderAuthControl from './HeaderAuthControl';
-import './header.scss';
 
 const Header = () => {
   return (

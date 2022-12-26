@@ -1,6 +1,7 @@
+import './bullets.scss';
+
 import React from 'react';
 import { Box, Container, Grid, Stack } from '@mui/material';
-import './bullets.scss';
 import FatodoGroupsImg from '../../images/FatodoGroupsImg';
 import BulletsTitle from './BulletsTitle';
 import BulletsItem from './BulletsItem';

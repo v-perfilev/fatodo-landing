@@ -3,10 +3,9 @@
 .banner {
   display: flex;
   width: 100%;
-  height: 300px;
+  height: 350px;
   border-radius: 20px;
   background: $turquoise-blue-gradient;
-  margin-top: 180px;
 
   &__text {
     display: flex;
@@ -52,8 +51,8 @@
       position: absolute;
       top: -75px;
       right: 50px;
-      width: 450px;
-      height: 450px;
+      width: 500px;
+      height: 500px;
       display: flex;
       justify-content: center;
       align-items: center;

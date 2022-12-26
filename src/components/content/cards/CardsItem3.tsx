@@ -1,6 +1,7 @@
+import './cards.scss';
+
 import React from 'react';
 import { Box, Stack, Typography } from '@mui/material';
-import './cards.scss';
 import { AlarmCheckIcon } from '../../icons/AlarmCheckIcon';
 import { useI18next } from 'gatsby-plugin-react-i18next';
 

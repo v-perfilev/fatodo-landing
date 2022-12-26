@@ -1,3 +1,5 @@
+import './feedback.scss';
+
 import React, { useState } from 'react';
 import { Field, Formik, FormikHelpers, FormikProps } from 'formik';
 import * as Yup from 'yup';
@@ -5,7 +7,6 @@ import { useI18next } from 'gatsby-plugin-react-i18next';
 import withCaptcha, { CaptchaProps } from '../../../shared/hocs/withCaptcha';
 import { Box, Button, CircularProgress, Stack } from '@mui/material';
 import { TextField } from 'formik-mui';
-import './feedback.scss';
 import FeedbackSuccessSnack from '../../snacks/FeedbackSuccessSnack';
 import FeedbackErrorSnack from '../../snacks/FeedbackErrorSnack';
 import axios from 'axios';
@@ -56,8 +57,11 @@ const FeedbackForm = ({ getToken }: FeedbackFormProps) => {
     const dto: FeedbackDTO = { ...formValues, token };
     axios
       .post(FEEDBACK_API, dto)
-      .then(showSuccessSnack)
-      .catch(showErrorSnack)
+      .then(() => {
+        showSuccessSnack();
+        formikProps.resetForm();
+      })
+      .catch(() => showErrorSnack())
       .finally(() => formikProps.setSubmitting(false));
   };
 

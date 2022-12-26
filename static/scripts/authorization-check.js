@@ -1,4 +1,4 @@
-const SCRIPT_APP_DOMAIN = 'http://app.fatodo.app';
+const SCRIPT_APP_DOMAIN = 'https://client.fatodo.app';
 const SCRIPT_AUTH_URL = SCRIPT_APP_DOMAIN + '/scripts/authorization-check.html';
 const SCRIPT_IFRAME_ID = 'auth_ifr';
 

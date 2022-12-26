@@ -1,6 +1,7 @@
+import './footer.scss';
+
 import React from 'react';
 import { Box, Stack, Typography } from '@mui/material';
-import './footer.scss';
 import LogoImg from '../../images/LogoImg';
 
 const FooterCopyright = () => {

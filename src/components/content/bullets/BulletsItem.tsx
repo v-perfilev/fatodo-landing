@@ -1,6 +1,7 @@
+import './bullets.scss';
+
 import React, { ReactNode } from 'react';
 import { Box, Stack, Typography } from '@mui/material';
-import './bullets.scss';
 
 type BulletsItemProps = {
   children: ReactNode;

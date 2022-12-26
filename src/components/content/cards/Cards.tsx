@@ -1,9 +1,10 @@
+import './cards.scss';
+
 import React from 'react';
 import { Box, Container, Grid } from '@mui/material';
 import CardsItem1 from './CardsItem1';
 import CardsItem2 from './CardsItem2';
 import CardsItem3 from './CardsItem3';
-import './cards.scss';
 
 const Cards = () => {
   return (

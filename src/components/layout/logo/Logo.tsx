@@ -1,10 +1,11 @@
+import './logo.scss';
+
 import React from 'react';
 import { animated, useSpring } from 'react-spring';
 import LogoImg from '../../images/LogoImg';
 import useIsOnTop from '../../../shared/hooks/useIsOnTop';
 import { Link } from 'gatsby';
 import { Stack } from '@mui/material';
-import './logo.scss';
 
 const Logo = () => {
   const isOnTop = useIsOnTop();

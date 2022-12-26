@@ -1,6 +1,7 @@
+import './feedback.scss';
+
 import React from 'react';
 import { Box, Container, Stack, Typography } from '@mui/material';
-import './feedback.scss';
 import OctopusQuestionImg from '../../images/OctopusQuestionImg';
 import FeedbackForm from './FeedbackForm';
 import { useI18next } from 'gatsby-plugin-react-i18next';

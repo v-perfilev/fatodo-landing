@@ -1,9 +1,10 @@
+import './banner.scss';
+
 import React from 'react';
 import { Box, Button, Container, Grid, Stack, Typography } from '@mui/material';
 import OctopusBannerImg from '../../images/OctopusBannerImg';
 import { useI18next } from 'gatsby-plugin-react-i18next';
 import { REGISTRATION_URL } from '../../../constants';
-import './banner.scss';
 
 const Banner = () => {
   const { t } = useI18next();

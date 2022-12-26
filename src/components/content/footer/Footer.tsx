@@ -1,9 +1,10 @@
+import './footer.scss';
+
 import React from 'react';
 import { Box, Container, Stack } from '@mui/material';
 import FooterCopyright from './FooterCopyright';
 import FooterStores from './FooterStores';
 import FooterLinks from './FooterLinks';
-import './footer.scss';
 
 const Footer = () => {
   return (
