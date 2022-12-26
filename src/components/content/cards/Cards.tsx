@@ -8,6 +8,7 @@ import CardsItem3 from './CardsItem3';
 
 const Cards = () => {
   const isMdUp = useMediaQuery((theme: Theme) => theme.breakpoints.up('md'));
+  const isMd = useMediaQuery((theme: Theme) => theme.breakpoints.only('md'));
 
   return (
     <Container>
@@ -16,10 +17,11 @@ const Cards = () => {
           <Grid className="cards__container" item xs={12} md={12} lg={4}>
             <CardsItem1 />
           </Grid>
-          <Grid className="cards__container" item xs={12} md={6} lg={4}>
+          {isMd && <Grid item md={1} />}
+          <Grid className="cards__container" item xs={12} md={5} lg={4}>
             <CardsItem2 />
           </Grid>
-          <Grid className="cards__container" item xs={12} md={6} lg={4}>
+          <Grid className="cards__container" item xs={12} md={5} lg={4}>
             <CardsItem3 />
           </Grid>
         </Grid>
