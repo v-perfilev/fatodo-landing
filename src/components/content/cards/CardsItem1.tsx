@@ -9,8 +9,8 @@ import { APPLE_STORE_URL, GOOGLE_PLAY_URL } from '../../../constants';
 const CardsItem1 = () => {
   return (
     <Box className="cards__item">
-      <Stack className="cards__item--item1" direction="row" spacing={3}>
-        <Stack direction="column" spacing={2}>
+      <Stack className="cards__item--links" direction="row" spacing={3}>
+        <Stack className="cards__item--links__stores" direction="column" spacing={2}>
           <a href={GOOGLE_PLAY_URL}>
             <GooglePlayImg />
           </a>
@@ -18,8 +18,8 @@ const CardsItem1 = () => {
             <AppleStoreImg />
           </a>
         </Stack>
-        <Box className="cards__item--item1__column">
-          <Box className="cards__item--item1__qr">
+        <Box className="cards__item--links__qr">
+          <Box>
             <Link to="/app-store-detector">
               <QrImg />
             </Link>

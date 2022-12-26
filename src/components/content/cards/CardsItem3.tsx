@@ -8,7 +8,7 @@ const CardsItem3 = () => {
 
   return (
     <Box className="cards__item">
-      <Stack>
+      <Stack spacing={1}>
         <Box className="cards__item__icon">
           <AlarmCheckIcon fontSize="large" />
         </Box>
