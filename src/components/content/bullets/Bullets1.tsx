@@ -7,6 +7,7 @@ import BulletsTitle from './BulletsTitle';
 import BulletsItem from './BulletsItem';
 import { useI18next } from 'gatsby-plugin-react-i18next';
 import Space from '../../layout/Space';
+import AnimateIn from '../../animation/AnimateIn';
 
 const Bullets1 = () => {
   const { t } = useI18next();
@@ -18,15 +19,17 @@ const Bullets1 = () => {
         <Grid container>
           <Grid item xs={0} md={1} />
           <Grid className="bullets__container" item xs={12} md={5}>
-            <Stack className="bullets__text" direction="column" spacing={5}>
-              <BulletsTitle
-                blueText={t('index.bullets.groups.blueTitle')}
-                yellowText={t('index.bullets.groups.yellowTitle')}
-              />
-              <BulletsItem>{t('index.bullets.groups.item1')}</BulletsItem>
-              <BulletsItem>{t('index.bullets.groups.item2')}</BulletsItem>
-              <BulletsItem>{t('index.bullets.groups.item3')}</BulletsItem>
-            </Stack>
+            <AnimateIn>
+              <Stack className="bullets__text" direction="column" spacing={5}>
+                <BulletsTitle
+                  blueText={t('index.bullets.groups.blueTitle')}
+                  yellowText={t('index.bullets.groups.yellowTitle')}
+                />
+                <BulletsItem>{t('index.bullets.groups.item1')}</BulletsItem>
+                <BulletsItem>{t('index.bullets.groups.item2')}</BulletsItem>
+                <BulletsItem>{t('index.bullets.groups.item3')}</BulletsItem>
+              </Stack>
+            </AnimateIn>
           </Grid>
           {!isMdUp && (
             <Grid item xs={12}>
@@ -34,10 +37,12 @@ const Bullets1 = () => {
             </Grid>
           )}
           <Grid className="bullets__container" item xs={12} md={5}>
-            <Box className="bullets__image">
-              <Box className="bullets__image__bg" />
-              <FatodoGroupsImg />
-            </Box>
+            <AnimateIn>
+              <Box className="bullets__image">
+                <Box className="bullets__image__bg" />
+                <FatodoGroupsImg />
+              </Box>
+            </AnimateIn>
           </Grid>
         </Grid>
       </Box>
