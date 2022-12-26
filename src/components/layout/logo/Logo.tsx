@@ -5,7 +5,7 @@ import { animated, useSpring } from 'react-spring';
 import LogoImg from '../../images/LogoImg';
 import useIsOnTop from '../../../shared/hooks/useIsOnTop';
 import { Link } from 'gatsby';
-import { Stack } from '@mui/material';
+import { Box, Stack } from '@mui/material';
 
 const Logo = () => {
   const isOnTop = useIsOnTop();
