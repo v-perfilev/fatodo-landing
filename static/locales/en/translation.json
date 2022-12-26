@@ -59,7 +59,15 @@
           "required": "Field is required"
         }
       },
-      "submit": "Submit"
+      "submit": "Submit",
+      "snack": {
+        "success": "Your message was sent successfully. Thank you!",
+        "error": "Error while sending message, please try again"
+      }
+    },
+    "cookies-consent": {
+      "title": "We use only necessary cookies to provide you better browsing experience",
+      "button": "Accept"
     }
   }
 }

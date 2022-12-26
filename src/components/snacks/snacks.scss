@@ -1,0 +1,19 @@
+@import "src/constants";
+
+.cookies-consent {
+  padding: 15px 25px;
+  border-radius: 10px;
+  background: $turquoise-blue-gradient;
+  box-shadow: 0 0 8px 8px $yellow-transparent-color;
+
+  &__title {
+    font-size: 16px !important;
+    font-weight: 400 !important;
+    color: $white-color;
+  }
+
+  &__buttons {
+    display: flex;
+    justify-content: flex-end;
+  }
+}

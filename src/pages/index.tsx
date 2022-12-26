@@ -7,6 +7,7 @@ import Cards from '../components/content/cards/Cards';
 import Bullets1 from '../components/content/bullets/Bullets1';
 import Bullets2 from '../components/content/bullets/Bullets2';
 import Banner from '../components/content/banner/Banner';
+import CookiesConsentSnack from '../components/snacks/CookiesConsentSnack';
 
 const IndexPage = () => (
   <Layout>
@@ -16,6 +17,7 @@ const IndexPage = () => (
     <Bullets1 />
     <Bullets2 />
     <Feedback />
+    <CookiesConsentSnack />
   </Layout>
 );
 
