@@ -1,5 +1,3 @@
-import './feedback.scss';
-
 import React, { useState } from 'react';
 import { Field, Formik, FormikHelpers, FormikProps } from 'formik';
 import * as Yup from 'yup';

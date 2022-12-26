@@ -1,5 +1,3 @@
-import './footer.scss';
-
 import React from 'react';
 import { Stack } from '@mui/material';
 import { useI18next } from 'gatsby-plugin-react-i18next';

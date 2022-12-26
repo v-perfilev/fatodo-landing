@@ -1,5 +1,3 @@
-import './footer.scss';
-
 import React from 'react';
 import { Stack } from '@mui/material';
 import GooglePlayImg from '../../images/GooglePlayImg';

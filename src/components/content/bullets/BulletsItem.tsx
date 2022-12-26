@@ -1,5 +1,3 @@
-import './bullets.scss';
-
 import React, { ReactNode } from 'react';
 import { Box, Stack, Typography } from '@mui/material';
 

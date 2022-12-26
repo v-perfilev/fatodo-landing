@@ -1,5 +1,3 @@
-import './footer.scss';
-
 import React from 'react';
 import { Box, Stack, Typography } from '@mui/material';
 import LogoImg from '../../images/LogoImg';

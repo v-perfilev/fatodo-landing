@@ -1,5 +1,3 @@
-import './cards.scss';
-
 import React from 'react';
 import { Box, Stack, Typography } from '@mui/material';
 import { PeopleIcon } from '../../icons/PeopleIcon';

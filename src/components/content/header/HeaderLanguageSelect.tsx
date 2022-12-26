@@ -19,7 +19,7 @@ const HeaderLanguageSelect = () => {
   );
 
   const smDownView = (
-    <IconButton onClick={handleClick}>
+    <IconButton color="primary" onClick={handleClick}>
       <LanguageIcon />
     </IconButton>
   );
@@ -30,7 +30,7 @@ const HeaderLanguageSelect = () => {
       <Menu anchorEl={ref.current} open={isOpen} onClose={handleClose}>
         {languages.map((lng) => (
           <MenuItem key={lng}>
-            <Link className="header__language-select__link" to={originalPath} language={lng}>
+            <Link className="header__menu__link" to={originalPath} language={lng}>
               {lng}
             </Link>
           </MenuItem>

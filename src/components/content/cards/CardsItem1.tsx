@@ -1,5 +1,3 @@
-import './cards.scss';
-
 import React from 'react';
 import { Box, Stack } from '@mui/material';
 import GooglePlayImg from '../../images/GooglePlayImg';
