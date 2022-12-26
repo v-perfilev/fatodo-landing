@@ -1,4 +1,4 @@
-image: node:17
+image: node:18
 
 variables:
   TAG_LATEST: $CI_REGISTRY_IMAGE/$CI_COMMIT_REF_NAME:latest
