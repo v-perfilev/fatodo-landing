@@ -17,7 +17,7 @@ const IndexPage = () => {
   return (
     <Layout>
       <Seo title="Home" />
-      <Space height={isMdUp ? 160 : 100} />
+      <Space height={isMdUp ? 150 : 100} />
       <Banner />
       <Space height={isMdUp ? 130 : 120} />
       <Cards />

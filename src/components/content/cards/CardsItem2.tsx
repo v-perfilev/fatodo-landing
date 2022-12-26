@@ -13,6 +13,7 @@ const CardsItem2 = () => {
       <Box className="cards__item">
         <Stack spacing={1}>
           <Box className="cards__item__icon">
+            <Box className="cards__item__icon__bg" />
             <PeopleIcon fontSize="large" />
           </Box>
           <Typography className="cards__item__title" variant="h6">
