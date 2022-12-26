@@ -2,6 +2,7 @@ import React, { createRef, useState } from 'react';
 import { Button, IconButton, Menu, MenuItem, Theme, useMediaQuery } from '@mui/material';
 import { useI18next } from 'gatsby-plugin-react-i18next';
 import { MenuIcon } from '../../icons/MenuIcon';
+import { LOGIN_URL, REGISTRATION_URL } from '../../../constants';
 
 const HeaderAuthControl = () => {
   const { t } = useI18next();
@@ -12,8 +13,8 @@ const HeaderAuthControl = () => {
   const handleClick = (): void => setIsOpen(true);
   const handleClose = (): void => setIsOpen(false);
 
-  const redirectToLogin = (): void => window.location.replace('https://app.fatodo.app/login');
-  const redirectToRegister = (): void => window.location.replace('https://app.fatodo.app/registration');
+  const redirectToLogin = (): void => window.location.replace(LOGIN_URL);
+  const redirectToRegister = (): void => window.location.replace(REGISTRATION_URL);
 
   const smUpView = (
     <>

@@ -4,8 +4,11 @@ import './bullets.scss';
 import FatodoGroupsImg from '../../images/FatodoGroupsImg';
 import BulletsTitle from './BulletsTitle';
 import BulletsItem from './BulletsItem';
+import { useI18next } from 'gatsby-plugin-react-i18next';
 
 const Bullets1 = () => {
+  const { t } = useI18next();
+
   return (
     <Container>
       <Box className="bullets">
@@ -13,12 +16,13 @@ const Bullets1 = () => {
           <Grid item xs={1} />
           <Grid className="bullets__container" item xs={5}>
             <Stack className="bullets__text" direction="column" spacing={5}>
-              <BulletsTitle blueText={'It is time to do'} yellowText={'your best'} />
-              <BulletsItem>Create task lists for yourself and plan your day as efficiently as possible</BulletsItem>
-              <BulletsItem>Share tasks and do them faster together with friends and colleagues</BulletsItem>
-              <BulletsItem>
-                Exchange ideas in comments and messages, find effective ways to achieve your goals
-              </BulletsItem>
+              <BulletsTitle
+                blueText={t('index.bullets.groups.blueTitle')}
+                yellowText={t('index.bullets.groups.yellowTitle')}
+              />
+              <BulletsItem>{t('index.bullets.groups.item1')}</BulletsItem>
+              <BulletsItem>{t('index.bullets.groups.item2')}</BulletsItem>
+              <BulletsItem>{t('index.bullets.groups.item3')}</BulletsItem>
             </Stack>
           </Grid>
           <Grid className="bullets__container" item xs={5}>

@@ -10,22 +10,22 @@ import './feedback.scss';
 type FeedbackFormValues = {
   name: string;
   email: string;
-  details: string;
+  message: string;
 };
 
 const defaultFeedbackFormValues: Readonly<FeedbackFormValues> = {
   name: '',
   email: '',
-  details: '',
+  message: '',
 };
 
 const signInValidationScheme = (t: (key: string) => string) =>
   Yup.object().shape({
-    name: Yup.string().required(() => t('account:fields.user.required')),
+    name: Yup.string().required(() => t('index.feedback.fields.name.required')),
     email: Yup.string()
-      .email(() => t('account:fields.password.required'))
-      .required(() => t('account:fields.password.required')),
-    details: Yup.string().required(() => t('account:fields.password.required')),
+      .email(() => t('index.feedback.fields.email.email'))
+      .required(() => t('index.feedback.fields.email.required')),
+    message: Yup.string().required(() => t('index.feedback.fields.message.required')),
   });
 
 type FeedbackFormProps = CaptchaProps;
@@ -59,7 +59,7 @@ const FeedbackForm = ({ getToken }: FeedbackFormProps) => {
               type="text"
               fullWidth
               name="name"
-              label="Name"
+              label={t('index.feedback.fields.name.title')}
             />
             <Field
               className="feedback__input"
@@ -68,7 +68,7 @@ const FeedbackForm = ({ getToken }: FeedbackFormProps) => {
               type="text"
               fullWidth
               name="email"
-              label="Email"
+              label={t('index.feedback.fields.email.title')}
             />
           </Stack>
           <Field
@@ -77,8 +77,8 @@ const FeedbackForm = ({ getToken }: FeedbackFormProps) => {
             required
             type="text"
             fullWidth
-            name="details"
-            label="Details"
+            name="message"
+            label={t('index.feedback.fields.message.title')}
             multiline
             rows={5}
           />
@@ -91,7 +91,7 @@ const FeedbackForm = ({ getToken }: FeedbackFormProps) => {
             >
               <Stack direction="row" spacing={1}>
                 {formikProps.isSubmitting && <CircularProgress color="inherit" size={20} />}
-                <Box>Submit</Box>
+                <Box>{t('index.feedback.submit')}</Box>
               </Stack>
             </Button>
           </Box>

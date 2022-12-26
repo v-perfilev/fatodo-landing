@@ -2,8 +2,11 @@ import React from 'react';
 import { Box, Stack, Typography } from '@mui/material';
 import './cards.scss';
 import { PeopleIcon } from '../../icons/PeopleIcon';
+import { useI18next } from 'gatsby-plugin-react-i18next';
 
 const CardsItem2 = () => {
+  const { t } = useI18next();
+
   return (
     <Box className="cards__item">
       <Stack>
@@ -11,10 +14,10 @@ const CardsItem2 = () => {
           <PeopleIcon fontSize="large" />
         </Box>
         <Typography className="cards__item__title" variant="h6">
-          Like a social network but for achieving goals
+          {t('index.cards.members.title')}
         </Typography>
         <Typography className="cards__item__text" variant="body1">
-          Create task lists, share them, and discuss their fulfillment in comments and chat rooms.
+          {t('index.cards.members.text')}
         </Typography>
       </Stack>
     </Box>

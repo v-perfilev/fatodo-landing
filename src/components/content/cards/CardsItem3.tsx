@@ -2,8 +2,11 @@ import React from 'react';
 import { Box, Stack, Typography } from '@mui/material';
 import './cards.scss';
 import { AlarmCheckIcon } from '../../icons/AlarmCheckIcon';
+import { useI18next } from 'gatsby-plugin-react-i18next';
 
 const CardsItem3 = () => {
+  const { t } = useI18next();
+
   return (
     <Box className="cards__item">
       <Stack>
@@ -11,10 +14,10 @@ const CardsItem3 = () => {
           <AlarmCheckIcon fontSize="large" />
         </Box>
         <Typography className="cards__item__title" variant="h6">
-          Set priorities and do not forget about anything
+          {t('index.cards.alarm.title')}
         </Typography>
         <Typography className="cards__item__text" variant="body1">
-          A convenient alert system with e-mail and push notifications will remind you of important dates and events.
+          {t('index.cards.alarm.text')}
         </Typography>
       </Stack>
     </Box>
