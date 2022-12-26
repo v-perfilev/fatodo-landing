@@ -30,7 +30,7 @@ const HeaderLanguageSelect = () => {
       <Menu anchorEl={ref.current} open={isOpen} onClose={handleClose}>
         {languages.map((lng) => (
           <MenuItem key={lng}>
-            <Link to={originalPath} language={lng}>
+            <Link className="header__language-select__link" to={originalPath} language={lng}>
               {lng}
             </Link>
           </MenuItem>

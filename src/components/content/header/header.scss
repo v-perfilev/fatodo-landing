@@ -31,4 +31,12 @@
     align-items: center;
     justify-content: space-between;
   }
+
+  &__language-select__link {
+    margin: 0 5px;
+    font-size: 14px !important;
+    font-weight: 500 !important;
+    color: $turquoise-color;
+    text-transform: uppercase;
+  }
 }
