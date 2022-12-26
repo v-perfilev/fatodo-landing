@@ -3,7 +3,6 @@ import { Box, Stack } from '@mui/material';
 import './cards.scss';
 import GooglePlayImg from '../../images/GooglePlayImg';
 import AppleStoreImg from '../../images/AppleStoreImg';
-import { Link } from 'gatsby';
 import QrImg from '../../images/QrImg';
 
 const CardsItem1 = () => {
@@ -11,18 +10,18 @@ const CardsItem1 = () => {
     <Box className="cards__item">
       <Stack className="cards__item--item1" direction="row" spacing={3}>
         <Stack direction="column" spacing={2}>
-          <Link to="https://yandex.ru">
+          <a href="https://yandex.ru">
             <GooglePlayImg />
-          </Link>
-          <Link to="https://yandex.ru">
+          </a>
+          <a href="https://yandex.ru">
             <AppleStoreImg />
-          </Link>
+          </a>
         </Stack>
         <Box className="cards__item--item1__column">
           <Box className="cards__item--item1__qr">
-            <Link to="https://yandex.ru">
+            <a href="https://yandex.ru">
               <QrImg />
-            </Link>
+            </a>
           </Box>
         </Box>
       </Stack>

@@ -3,7 +3,7 @@ FROM node:17 as build
 WORKDIR /app
 
 COPY . ./
-RUN npm install
+RUN npm install --legacy-peer-deps
 RUN ./node_modules/.bin/gatsby build --prefix-paths
 
 FROM nginx:alpine

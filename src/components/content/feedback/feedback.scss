@@ -4,10 +4,15 @@
   position: relative;
   display: flex;
   width: 100%;
-  height: 400px;
   border-radius: 20px;
   background: $turquoise-blue-gradient;
   margin-top: 150px;
+  padding: 20px 40px 30px;
+
+  & > * {
+    flex-grow: 1;
+  }
+
 
   &__image {
     position: absolute;
@@ -15,5 +20,54 @@
     right: -65px;
     width: 150px;
     height: 150px;
+  }
+
+  &__title {
+    font-size: 24px !important;
+    font-weight: 500 !important;
+    color: $white-color;
+  }
+
+  &__subtitle {
+    width: 80%;
+    font-size: 16px !important;
+    font-weight: 400 !important;
+    color: $white-color;
+  }
+
+  &__buttons {
+    display: flex;
+    flex-grow: 1;
+    justify-content: flex-end;
+  }
+
+  &__input {
+
+    & input, & textarea {
+      color: $white-color;
+    }
+
+    & label {
+      color: $white-color;
+
+      &.Mui-focused {
+        color: $yellow-color;
+      }
+    }
+
+    & .MuiOutlinedInput-root {
+      & fieldset {
+        border-color: $gray-color;
+      }
+
+      &:hover fieldset {
+        border-color: $white-color;
+      }
+
+      &.Mui-focused fieldset {
+        border-color: $yellow-color;
+      }
+    }
+
   }
 }
