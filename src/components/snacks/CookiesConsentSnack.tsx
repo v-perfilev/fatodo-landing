@@ -1,19 +1,24 @@
-import React, { useState } from 'react';
+import './snacks.scss';
+
+import React, { useEffect, useState } from 'react';
 import { Box, Snackbar, Stack, Typography } from '@mui/material';
 import { Button } from 'gatsby-theme-material-ui';
 import { useI18next } from 'gatsby-plugin-react-i18next';
 import Cookie from 'js-cookie';
 import SnackTransition from './SnackTransition';
-import './snacks.scss';
 
 const CookiesConsentSnack = () => {
   const { t } = useI18next();
-  const [show, setShow] = useState<boolean>(Cookie.get('consent') === undefined);
+  const [show, setShow] = useState<boolean>(false);
 
   const accept = (): void => {
     Cookie.set('consent', 'true', { sameSite: 'strict', expires: 365 });
     setShow(false);
   };
+
+  useEffect(() => {
+    setShow(Cookie.get('consent') === undefined);
+  }, []);
 
   return (
     <Snackbar

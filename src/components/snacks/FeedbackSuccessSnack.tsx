@@ -1,7 +1,8 @@
+import './snacks.scss';
+
 import React from 'react';
 import { Alert, Snackbar } from '@mui/material';
 import SnackTransition from './SnackTransition';
-import './snacks.scss';
 import { useI18next } from 'gatsby-plugin-react-i18next';
 
 type FeedbackSuccessSnackProps = {
