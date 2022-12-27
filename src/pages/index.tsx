@@ -19,7 +19,7 @@ const IndexPage = () => {
       <Seo title="Home" />
       <Space height={isMdUp ? 150 : 100} />
       <Banner />
-      <Space height={isMdUp ? 130 : 120} />
+      <Space height={isMdUp ? 130 : 130} />
       <Cards />
       <Space height={isMdUp ? 150 : 100} />
       <Bullets1 />

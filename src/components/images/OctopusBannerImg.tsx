@@ -1,8 +1,7 @@
 import React from 'react';
-import { StaticImage } from 'gatsby-plugin-image';
 
 const OctopusBannerImg = () => {
-  return <StaticImage src="../../../static/images/octopus-banner.png" alt="Fatodo Octopus" />;
+  return <img width="100%" height="100%" src="/images/octopus.svg" alt="Fatodo Octopus" />;
 };
 
 export default OctopusBannerImg;
