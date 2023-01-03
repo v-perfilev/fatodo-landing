@@ -21,7 +21,9 @@ const FeedbackErrorSnack = ({ open, close }: FeedbackErrorSnackProps) => {
       TransitionComponent={SnackTransition}
       anchorOrigin={{ vertical: 'bottom', horizontal: 'right' }}
     >
-      <Alert severity="error">{t('index.feedback.snack.error')}</Alert>
+      <Alert icon={false} variant="filled" severity="error">
+        {t('index.feedback.snack.error')}
+      </Alert>
     </Snackbar>
   );
 };

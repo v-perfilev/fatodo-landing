@@ -53,14 +53,20 @@ const FeedbackForm = ({ getToken }: FeedbackFormProps) => {
   ): Promise<void> => {
     const token = await getToken();
     const dto: FeedbackDTO = { ...formValues, token };
-    axios
-      .post(FEEDBACK_API, dto)
-      .then(() => {
-        showSuccessSnack();
-        formikProps.resetForm();
-      })
-      .catch(() => showErrorSnack())
-      .finally(() => formikProps.setSubmitting(false));
+
+    return new Promise((resolve) => {
+      axios
+        .post(FEEDBACK_API, dto)
+        .then(() => {
+          showSuccessSnack();
+          setTimeout(formikProps.resetForm, 200);
+        })
+        .catch(() => showErrorSnack())
+        .finally(() => {
+          formikProps.setSubmitting(false);
+          resolve();
+        });
+    });
   };
 
   return (

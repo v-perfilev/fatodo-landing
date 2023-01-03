@@ -52,10 +52,19 @@
 
     & input, & textarea {
       color: $white-color;
+
+      &.Mui-disabled {
+        color: $light-gray-color;
+        -webkit-text-fill-color: $light-gray-color;
+      }
     }
 
     & label {
       color: $white-color;
+
+      &.Mui-disabled {
+        color: $light-gray-color;
+      }
 
       &.Mui-focused {
         color: $yellow-color;
@@ -69,6 +78,10 @@
 
       &:hover fieldset {
         border-color: $white-color;
+      }
+
+      &.Mui-disabled fieldset {
+        border-color: $light-gray-color;
       }
 
       &.Mui-focused fieldset {

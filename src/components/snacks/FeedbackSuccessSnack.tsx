@@ -21,7 +21,9 @@ const FeedbackSuccessSnack = ({ open, close }: FeedbackSuccessSnackProps) => {
       TransitionComponent={SnackTransition}
       anchorOrigin={{ vertical: 'bottom', horizontal: 'right' }}
     >
-      <Alert severity="success">{t('index.feedback.snack.success')}</Alert>
+      <Alert icon={false} variant="filled" severity="success">
+        {t('index.feedback.snack.success')}
+      </Alert>
     </Snackbar>
   );
 };
