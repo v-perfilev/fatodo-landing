@@ -17,7 +17,9 @@ const CookiesConsentSnack = () => {
   };
 
   useEffect(() => {
-    setShow(Cookie.get('consent') === undefined);
+    setTimeout(() => {
+      setShow(Cookie.get('consent') === undefined);
+    }, 1000);
   }, []);
 
   return (
