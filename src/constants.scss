@@ -1,10 +1,12 @@
 $white-color: #ffffff;
 $black-color: #333333;
-$gray-color: #e1e1e1;
+$gray-color: #555555;
+$light-gray-color: #e1e1e1;
 
 $yellow-transparent-color: rgba(255, 186, 22, 0.2);
 $yellow-color: #ffba16;
 $turquoise-color: #21b0a7;
+$dark-turquoise-color: #1f8c83;
 $blue-color: #164587;
 $orange-color: #d98d00;
 
@@ -14,4 +16,4 @@ $warning-color: #ffba16;
 $error-color: #ff5722;
 
 $turquoise-blue-gradient: linear-gradient(to right bottom, rgb(36, 168, 161) 0%, rgb(22, 68, 130) 100%);
-$yellow-orange-gradient: linear-gradient(to right bottom, rgb(245, 179, 26) 0%, rgb(230, 162, 9) 100%);
+$yellow-orange-gradient: linear-gradient(to right bottom, rgb(245, 179, 26) 0%, rgb(218, 147, 16) 100%);

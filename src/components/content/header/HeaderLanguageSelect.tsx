@@ -13,13 +13,13 @@ const HeaderLanguageSelect = () => {
   const handleClose = (): void => setIsOpen(false);
 
   const smUpView = (
-    <Button startIcon={<LanguageIcon />} onClick={handleClick}>
+    <Button color="secondary" startIcon={<LanguageIcon />} onClick={handleClick}>
       {language}
     </Button>
   );
 
   const smDownView = (
-    <IconButton color="primary" onClick={handleClick}>
+    <IconButton color="secondary" onClick={handleClick}>
       <LanguageIcon />
     </IconButton>
   );

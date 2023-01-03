@@ -8,18 +8,18 @@ import BannerImageSmall from './BannerImageSmall';
 import AnimateIn from '../../animation/AnimateIn';
 
 const Banner = () => {
-  const isMdUp = useMediaQuery((theme: Theme) => theme.breakpoints.up('md'));
+  const isLgUp = useMediaQuery((theme: Theme) => theme.breakpoints.up('lg'));
 
   return (
     <AnimateIn>
       <Container>
         <Box className="banner">
-          <Grid container>
-            <Grid className="banner__text" item xs={12} md={6}>
+          <Grid className="banner__container" container>
+            <Grid className="banner__text" item xs={12} lg={6}>
               <BannerText />
             </Grid>
-            <Grid className="banner__image" item xs={12} md={6}>
-              {isMdUp ? <BannerImageBig /> : <BannerImageSmall />}
+            <Grid className="banner__image" item xs={12} lg={6}>
+              {isLgUp ? <BannerImageBig /> : <BannerImageSmall />}
             </Grid>
           </Grid>
         </Box>

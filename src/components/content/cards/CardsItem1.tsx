@@ -1,34 +1,29 @@
 import React from 'react';
-import { Box, Stack, Theme, useMediaQuery } from '@mui/material';
-import GooglePlayImg from '../../images/GooglePlayImg';
-import AppleStoreImg from '../../images/AppleStoreImg';
-import QrImg from '../../images/QrImg';
-import { Link } from 'gatsby';
-import { APPLE_STORE_URL, GOOGLE_PLAY_URL } from '../../../constants';
+import { Box, Stack, Theme, Typography, useMediaQuery } from '@mui/material';
+import { PeopleIcon } from '../../icons/PeopleIcon';
+import { useI18next } from 'gatsby-plugin-react-i18next';
 import AnimateIn from '../../animation/AnimateIn';
 
 const CardsItem1 = () => {
   const isMdUp = useMediaQuery((theme: Theme) => theme.breakpoints.up('md'));
+  const { t } = useI18next();
+
+  const cardsItemClassName = isMdUp ? 'cards__item cards__item--big' : 'cards__item cards__item--small';
 
   return (
-    <AnimateIn delay={isMdUp ? 50 : undefined}>
-      <Box className="cards__item">
-        <Stack className="cards__item--links" direction="row" spacing={3}>
-          <Stack className="cards__item--links__stores" direction="column" spacing={2}>
-            <a href={GOOGLE_PLAY_URL}>
-              <GooglePlayImg />
-            </a>
-            <a href={APPLE_STORE_URL}>
-              <AppleStoreImg />
-            </a>
-          </Stack>
-          <Box className="cards__item--links__qr">
-            <Box>
-              <Link to="/app-store-detector">
-                <QrImg />
-              </Link>
-            </Box>
+    <AnimateIn>
+      <Box className={cardsItemClassName}>
+        <Stack spacing={3}>
+          <Box className="cards__item__icon">
+            <Box className="cards__item__icon__bg" />
+            <PeopleIcon />
           </Box>
+          <Typography className="cards__item__title" variant="h6">
+            {t('index.cards.members.title')}
+          </Typography>
+          <Typography className="cards__item__text" variant="body1">
+            {t('index.cards.members.text')}
+          </Typography>
         </Stack>
       </Box>
     </AnimateIn>

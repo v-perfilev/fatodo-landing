@@ -14,6 +14,14 @@
       "title2": "important",
       "subtitle": "Fatodo is a free web, iOS and Android application that allows you to organize tasks and collaborate on them with your friends and teams"
     },
+    "description": {
+      "greeting": "Welcome to Fatodo!",
+      "paragraph1": "With Fatodo, a task management and collaboration app, you can easily keep track of tasks, schedule appointments, and stay sync with friends and colleagues to get things done faster. It's easy to exchange ideas and find the most effective ways to achieve your goals.",
+      "bullet1": "Stay on top of your todo list with Fatodo's customizable task management system!",
+      "bullet2": "Stay connected with your friends and colleagues through Fatodo's built-in chat and messaging features!",
+      "bullet3": "Collaborate with others and share tasks with Fatodo's team management tools!",
+      "paragraph2": "So why wait? Download Fatodo today and start taking control of your life!"
+    },
     "cards": {
       "members": {
         "title": "Like a social network but for achieving goals",

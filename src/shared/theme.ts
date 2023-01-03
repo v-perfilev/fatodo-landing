@@ -7,7 +7,7 @@ const palette = {
     contrastText: COLORS.WHITE,
   },
   secondary: {
-    main: COLORS.BLUE,
+    main: COLORS.GRAY,
     contrastText: COLORS.WHITE,
   },
   info: {

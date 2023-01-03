@@ -9,7 +9,7 @@ const BannerText = () => {
   const redirectToRegister = (): void => window.location.replace(REGISTRATION_URL);
 
   return (
-    <Stack direction="column" spacing={3}>
+    <Stack direction="column" spacing={5}>
       <Typography variant="h2" className="banner__text__title">
         <span className="banner__text__title--white">{t('index.banner.title1')}</span>
         &nbsp;

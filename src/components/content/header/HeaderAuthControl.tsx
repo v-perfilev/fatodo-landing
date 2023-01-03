@@ -18,10 +18,10 @@ const HeaderAuthControl = () => {
 
   const smUpView = (
     <>
-      <Button className="turquoise-blue-button" variant="contained" onClick={redirectToLogin}>
+      <Button color="secondary" variant="contained" onClick={redirectToLogin}>
         {t('buttons.login')}
       </Button>
-      <Button className="turquoise-blue-button" variant="contained" onClick={redirectToRegister}>
+      <Button color="secondary" variant="contained" onClick={redirectToRegister}>
         {t('buttons.register')}
       </Button>
     </>
@@ -29,7 +29,7 @@ const HeaderAuthControl = () => {
 
   const smDownView = (
     <>
-      <IconButton color="primary" onClick={handleClick} ref={ref}>
+      <IconButton color="secondary" onClick={handleClick} ref={ref}>
         <MenuIcon />
       </IconButton>
       <Menu anchorEl={ref.current} open={isOpen} onClose={handleClose}>

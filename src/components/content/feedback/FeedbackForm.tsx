@@ -72,8 +72,8 @@ const FeedbackForm = ({ getToken }: FeedbackFormProps) => {
         onSubmit={handleSubmit}
       >
         {(formikProps: FormikProps<FeedbackFormValues>) => (
-          <Stack direction="column" spacing={3}>
-            <Grid container spacing={3}>
+          <Stack direction="column" spacing={5}>
+            <Grid container spacing={5}>
               <Grid item xs={12} md={6}>
                 <Field
                   className="feedback__input"

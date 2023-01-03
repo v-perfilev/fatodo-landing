@@ -1,0 +1,32 @@
+@import "src/constants";
+
+.links {
+  display: flex;
+  justify-content: center;
+
+  &__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    & > * {
+      margin: 20px;
+    }
+  }
+
+  &__stores {
+    max-width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__qr {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+}

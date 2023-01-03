@@ -9,9 +9,8 @@ type BulletsTitleProps = {
 const BulletsTitle = ({ blueText, yellowText }: BulletsTitleProps) => {
   return (
     <Typography className="bullets__title" variant="h3">
-      <span className="bullets__title--blue">{blueText}</span>
-      &nbsp;
-      <span className="bullets__title--yellow">{yellowText}</span>
+      {blueText}&nbsp;
+      <b className="bullets__title--yellow">{yellowText}</b>
     </Typography>
   );
 };

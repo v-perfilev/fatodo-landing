@@ -1,0 +1,33 @@
+@import "src/constants";
+
+.description {
+  font-size: 18px !important;
+  line-height: 30px !important;
+  font-weight: 400 !important;
+  color: $black-color;
+
+  &--turquoise {
+    font-size: 20px !important;
+    color: $turquoise-color;
+    font-weight: 600 !important;
+    word-wrap: normal;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+
+    &__dot {
+      flex-shrink: 0;
+      width: 10px;
+      height: 10px;
+      border-radius: 10px;
+      background: $yellow-orange-gradient;
+    }
+
+    &__text {
+      font-size: 18px !important;
+      color: $black-color;
+    }
+  }
+}

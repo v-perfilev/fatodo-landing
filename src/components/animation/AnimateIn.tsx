@@ -8,7 +8,7 @@ type AnimateInProps = {
 };
 
 const AnimateIn = ({ delay = 0, children }: AnimateInProps) => {
-  const { ref, inView } = useInView({ delay: 200, threshold: 0.3, initialInView: false, triggerOnce: true });
+  const { ref, inView } = useInView({ delay: 200, threshold: 0.2, initialInView: false, triggerOnce: true });
 
   const animatedStyles = useSpring({ opacity: inView ? 1 : 0, delay });
   const styles: CSSProperties = { display: 'flex', justifyContent: 'center', alignItems: 'center' };

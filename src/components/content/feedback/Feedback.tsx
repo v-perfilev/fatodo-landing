@@ -8,12 +8,15 @@ import { useI18next } from 'gatsby-plugin-react-i18next';
 
 const Feedback = () => {
   const { t } = useI18next();
+  const isMdUp = useMediaQuery((theme: Theme) => theme.breakpoints.up('md'));
   const isSmUp = useMediaQuery((theme: Theme) => theme.breakpoints.up('sm'));
+
+  const className = isMdUp ? 'feedback feedback--big' : 'feedback feedback--small';
 
   return (
     <Container maxWidth="md">
-      <Box className="feedback">
-        <Stack direction="column" spacing={2}>
+      <Box className={className}>
+        <Stack direction="column" spacing={5}>
           <Typography className="feedback__title" variant="h6">
             {t('index.feedback.title')}
           </Typography>

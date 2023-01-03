@@ -10,6 +10,8 @@ import Banner from '../components/content/banner/Banner';
 import CookiesConsentSnack from '../components/snacks/CookiesConsentSnack';
 import Space from '../components/layout/Space';
 import { Theme, useMediaQuery } from '@mui/material';
+import Links from '../components/content/links/Links';
+import Description from '../components/content/description/Description';
 
 const IndexPage = () => {
   const isMdUp = useMediaQuery((theme: Theme) => theme.breakpoints.up('md'));
@@ -17,9 +19,13 @@ const IndexPage = () => {
   return (
     <Layout>
       <Seo title="Home" />
-      <Space height={isMdUp ? 150 : 100} />
+      <Space height={isMdUp ? 130 : 100} />
       <Banner />
-      <Space height={isMdUp ? 130 : 130} />
+      <Space height={isMdUp ? 100 : 150} />
+      <Links />
+      <Space height={isMdUp ? 100 : 80} />
+      <Description />
+      <Space height={isMdUp ? 130 : 100} />
       <Cards />
       <Space height={isMdUp ? 150 : 100} />
       <Bullets1 />
@@ -36,7 +42,7 @@ const IndexPage = () => {
 export default IndexPage;
 
 export const query = graphql`
-  query ($language: String!) {
+  query($language: String!) {
     locales: allLocale(filter: { language: { eq: $language } }) {
       edges {
         node {
