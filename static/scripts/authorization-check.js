@@ -23,15 +23,15 @@ function getWin() {
 
 function sendRequest() {
   const win = getWin();
-  win.postMessage('*', '*');
+  // win.postMessage('*', '*');
+  win.onload = () => win.postMessage('*', '*');
 }
 
 function checkAuthorization() {
   console.log('Fatodo Authorization Check: started');
   addIframeToBody();
-  const win = getWin();
-  win.onload = () => win.postMessage('*', '*');
-  window.setTimeout(() => win.postMessage('*', '*'), 1000);
+  sendRequest();
+  // window.setTimeout(() => win.postMessage('*', '*'), 1000);
 }
 
 window.addEventListener('message', function (event) {
