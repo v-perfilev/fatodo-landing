@@ -18,6 +18,8 @@ function getWin() {
   } catch (e) {
     win = iframe.contentWindow;
   }
+
+  iframe.contentWindow.onload;
   return win;
 }
 
@@ -29,6 +31,9 @@ function sendRequest() {
 function checkAuthorization() {
   console.log('Fatodo Authorization Check: started');
   addIframeToBody();
+  const win = getWin();
+  win.onload = sendRequest;
+  window.setTimeout(() => sendRequest(), 1000);
   sendRequest();
 }
 
