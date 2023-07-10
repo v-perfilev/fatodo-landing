@@ -5,7 +5,6 @@ const SCRIPT_IFRAME_ID = 'auth_ifr';
 function addIframeToBody() {
   const iframe = document.createElement('iframe');
   iframe.addEventListener('load', function () {
-    console.log('loaded!');
     iframe.contentWindow.postMessage('*', '*');
   });
   iframe.setAttribute('id', SCRIPT_IFRAME_ID);
@@ -15,7 +14,6 @@ function addIframeToBody() {
 }
 
 function onMessage(event) {
-  console.log(event);
   if (event.origin === SCRIPT_APP_DOMAIN) {
     console.log('Fatodo Authorization Check: response received');
     if (event.data === true) {
