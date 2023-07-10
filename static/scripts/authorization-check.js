@@ -10,7 +10,7 @@ function addIframeToBody() {
   document.body.appendChild(iframe);
 }
 
-function getWin() {
+function sendRequest() {
   const iframe = document.getElementById(SCRIPT_IFRAME_ID);
   let win;
   try {
@@ -18,25 +18,14 @@ function getWin() {
   } catch (e) {
     win = iframe.contentWindow;
   }
-  return win;
-}
 
-function sendRequest() {
-  const win = getWin();
-
-  function send() {
-    console.log('send request');
-    win.postMessage('*', '*');
-  }
-
-  if (win.body != null) {
-    console.log('1', send, win, win.onload);
-    setTimeout(send, 5000);
-  } else {
-    console.log('2', send, win, win.onload);
-    win.onload = send;
-    setTimeout(send, 5000);
-  }
+  const inter = window.setInterval(function () {
+    if (win.document.readyState === 'complete') {
+      window.clearInterval(inter);
+      console.log('post!!!!!');
+      win.postMessage('*', '*');
+    }
+  }, 50);
 }
 
 function checkAuthorization() {
