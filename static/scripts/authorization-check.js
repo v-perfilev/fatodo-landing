@@ -18,8 +18,6 @@ function getWin() {
   } catch (e) {
     win = iframe.contentWindow;
   }
-
-  iframe.contentWindow.onload;
   return win;
 }
 
@@ -33,7 +31,7 @@ function checkAuthorization() {
   addIframeToBody();
   const win = getWin();
   win.onload = () => win.postMessage('*', '*');
-  // window.setTimeout(() => sendRequest(), 1000);
+  window.setTimeout(() => win.postMessage('*', '*'), 1000);
 }
 
 window.addEventListener('message', function (event) {
