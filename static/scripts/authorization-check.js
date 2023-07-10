@@ -24,7 +24,7 @@ function getWin() {
 function sendRequest() {
   const win = getWin();
   // win.postMessage('*', '*');
-  win.onload = () => {
+  win.onload = function () {
     console.log('send request');
     win.postMessage('*', '*');
   };
