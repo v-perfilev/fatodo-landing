@@ -23,18 +23,26 @@ function getWin() {
 
 function sendRequest() {
   const win = getWin();
-  // win.postMessage('*', '*');
-  win.onload = function () {
+
+  function send() {
     console.log('send request');
     win.postMessage('*', '*');
-  };
+  }
+
+  if (win.body != null) {
+    console.log('1', send, win, win.onload);
+    setTimeout(send, 5000);
+  } else {
+    console.log('2', send, win, win.onload);
+    win.onload = send;
+    setTimeout(send, 5000);
+  }
 }
 
 function checkAuthorization() {
   console.log('Fatodo Authorization Check: started');
   addIframeToBody();
   sendRequest();
-  // window.setTimeout(() => win.postMessage('*', '*'), 1000);
 }
 
 window.addEventListener('message', function (event) {
