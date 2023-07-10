@@ -26,25 +26,23 @@ function sendRequest() {
   win.postMessage('*', '*');
 }
 
-function readResponse(event) {
-  if (event.origin === SCRIPT_APP_DOMAIN && event.data === true) {
-    window.location.replace(SCRIPT_APP_DOMAIN);
-  }
-}
-
 function checkAuthorization() {
-  console.log('Fatodo: check authorization');
-  window.onmessage = readResponse;
+  console.log('Fatodo Authorization Check: started');
   addIframeToBody();
   sendRequest();
 }
 
-console.log('1');
+window.addEventListener('message', function (event) {
+  if (event.origin === SCRIPT_APP_DOMAIN) {
+    console.log('Fatodo Authorization Check: response received');
+    if (event.data === true) {
+      window.location.replace(SCRIPT_APP_DOMAIN);
+    }
+  }
+});
 
 if (document.body != null) {
-  console.log('2');
   checkAuthorization();
 } else {
-  console.log('3');
   window.onload = checkAuthorization;
 }
