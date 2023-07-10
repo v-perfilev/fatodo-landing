@@ -27,8 +27,6 @@ function sendRequest() {
 }
 
 function readResponse(event) {
-  console.log('Fatodo: response from the client app');
-  console.log(event);
   if (event.origin === SCRIPT_APP_DOMAIN && event.data === true) {
     window.location.replace(SCRIPT_APP_DOMAIN);
   }
@@ -41,8 +39,12 @@ function checkAuthorization() {
   sendRequest();
 }
 
+console.log('1');
+
 if (document.body != null) {
+  console.log('2');
   checkAuthorization();
 } else {
+  console.log('3');
   window.onload = checkAuthorization;
 }
