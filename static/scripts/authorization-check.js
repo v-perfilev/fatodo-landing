@@ -33,6 +33,7 @@ function checkAuthorization() {
 }
 
 window.addEventListener('message', function (event) {
+  console.log(event);
   if (event.origin === SCRIPT_APP_DOMAIN) {
     console.log('Fatodo Authorization Check: response received');
     if (event.data === true) {
