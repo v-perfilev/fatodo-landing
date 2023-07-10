@@ -24,7 +24,10 @@ function getWin() {
 function sendRequest() {
   const win = getWin();
   // win.postMessage('*', '*');
-  win.onload = () => win.postMessage('*', '*');
+  win.onload = () => {
+    console.log('send request');
+    win.postMessage('*', '*');
+  };
 }
 
 function checkAuthorization() {
