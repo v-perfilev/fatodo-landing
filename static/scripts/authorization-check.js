@@ -23,18 +23,13 @@ function getWin() {
 
 function sendRequest() {
   const win = getWin();
-  console.log(win);
   win.postMessage('*', '*');
 }
 
 function checkAuthorization() {
-  try {
-    console.log('Fatodo Authorization Check: started');
-    addIframeToBody();
-    sendRequest();
-  } catch (e) {
-    console.log(e);
-  }
+  console.log('Fatodo Authorization Check: started');
+  addIframeToBody();
+  sendRequest();
 }
 
 window.addEventListener('message', function (event) {
