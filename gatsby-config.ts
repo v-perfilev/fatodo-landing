@@ -68,7 +68,7 @@ const config: GatsbyConfig = {
       resolve: `gatsby-plugin-react-i18next`,
       options: {
         localeJsonSourceName: `locales`,
-        languages: [`en`, `ru`],
+        languages: [`en`, 'es', `ru`],
         defaultLanguage: `en`,
         siteUrl: `https://fatodo.app`,
       },
