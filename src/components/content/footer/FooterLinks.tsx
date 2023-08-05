@@ -7,10 +7,10 @@ const FooterLinks = () => {
 
   return (
     <Stack className="footer__links" direction="row" spacing={2}>
-      <a target="_blank" href="/data/fatodo-privacy-policy.pdf">
+      <a target="_blank" href="/data/fatodo-privacy-policy.html">
         {t('links.privacyPolicy')}
       </a>
-      <a target="_blank" href="/data/fatodo-terms-and-conditions-of-use.pdf">
+      <a target="_blank" href="/data/fatodo-terms-and-conditions-of-use.html">
         {t('links.termsOfUse')}
       </a>
     </Stack>
