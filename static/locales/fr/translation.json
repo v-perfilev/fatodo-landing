@@ -1,0 +1,81 @@
+{
+  "buttons": {
+    "login": "Se connecter",
+    "register": "S'inscrire",
+    "join": "Rejoignez gratuitement !"
+  },
+  "links": {
+    "termsOfUse": "Conditions d'utilisation",
+    "privacyPolicy": "Politique de confidentialité"
+  },
+  "index": {
+    "banner": {
+      "title1": "La plateforme qui garde les tâches importantes",
+      "title2": "en tête",
+      "subtitle": "Fatodo est une application web gratuite pour iOS et Android qui vous permet d'organiser des tâches et de collaborer avec vos amis et vos équipes."
+    },
+    "description": {
+      "greeting": "Bienvenue sur Fatodo !",
+      "paragraph1": "Avec Fatodo, une application de gestion des tâches et de collaboration, vous pouvez facilement suivre vos tâches, planifier des rendez-vous et rester en synchronisation avec vos amis et collègues pour accomplir les choses plus rapidement. Il est facile d'échanger des idées et de trouver les moyens les plus efficaces pour atteindre vos objectifs.",
+      "bullet1": "Restez au sommet de votre liste de choses à faire avec le système de gestion des tâches personnalisable de Fatodo !",
+      "bullet2": "Restez connecté avec vos amis et collègues grâce au chat et aux fonctionnalités de messagerie intégrées à Fatodo !",
+      "bullet3": "Collaborez avec les autres et partagez des tâches avec les outils de gestion d'équipe de Fatodo !",
+      "paragraph2": "Alors, pourquoi attendre ? Téléchargez Fatodo dès aujourd'hui et prenez le contrôle de votre vie !"
+    },
+    "cards": {
+      "members": {
+        "title": "Comme un réseau social, mais pour atteindre des objectifs",
+        "text": "Créez des listes de tâches, partagez-les et discutez de leur réalisation dans les commentaires et les salles de discussion."
+      },
+      "alarm": {
+        "title": "Définissez des priorités et n'oubliez rien",
+        "text": "Un système d'alerte pratique avec des notifications par e-mail et push vous rappellera les dates et événements importants."
+      }
+    },
+    "bullets": {
+      "groups": {
+        "blueTitle": "Il est temps de",
+        "yellowTitle": "faire de votre mieux",
+        "item1": "Créez des listes de tâches pour vous-même et planifiez votre journée de manière efficace.",
+        "item2": "Partagez des tâches et accomplissez-les plus rapidement avec des amis et des collègues.",
+        "item3": "Échangez des idées dans les commentaires et les messages, trouvez des moyens efficaces pour atteindre vos objectifs."
+      },
+      "calendar": {
+        "blueTitle": "Facile et",
+        "yellowTitle": "compréhensible",
+        "item1": "Il n'a jamais été aussi facile de gérer les listes de tâches.",
+        "item2": "Classifiez les tâches par priorité.",
+        "item3": "Contrôlez l'exécution grâce au système de rappel.",
+        "item4": "Les éléments les plus importants resteront toujours à portée de vue."
+      }
+    },
+    "feedback": {
+      "title": "Formulaire de retour",
+      "subtitle": "Nous aimerions connaître vos réflexions, suggestions ou problèmes avec quoi que ce soit pour que nous puissions nous améliorer !",
+      "fields": {
+        "name": {
+          "title": "Nom",
+          "required": "Champ requis."
+        },
+        "email": {
+          "title": "E-mail",
+          "email": "Le champ doit contenir une adresse e-mail correcte.",
+          "required": "Champ requis."
+        },
+        "message": {
+          "title": "Message",
+          "required": "Champ requis."
+        }
+      },
+      "submit": "Envoyer",
+      "snack": {
+        "success": "Votre message a été envoyé avec succès. Merci !",
+        "error": "Erreur lors de l'envoi du message, veuillez réessayer."
+      }
+    },
+    "cookies-consent": {
+      "title": "Nous utilisons uniquement des cookies nécessaires pour vous offrir une meilleure expérience de navigation.",
+      "button": "Accepter"
+    }
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "buttons": {
+    "login": "Conecte-se",
+    "register": "Inscrever-se",
+    "join": "Junte-se gratuitamente!"
+  },
+  "links": {
+    "termsOfUse": "Termos de Uso",
+    "privacyPolicy": "Política de Privacidade"
+  },
+  "index": {
+    "banner": {
+      "title1": "A plataforma que mantém as tarefas importantes",
+      "title2": "no topo da mente",
+      "subtitle": "Fatodo é um aplicativo gratuito para web, iOS e Android que permite organizar tarefas e colaborar nelas com seus amigos e equipes."
+    },
+    "description": {
+      "greeting": "Bem-vindo ao Fatodo!",
+      "paragraph1": "Com o Fatodo, um aplicativo de gerenciamento de tarefas e colaboração, você pode acompanhar facilmente as tarefas, agendar compromissos e se manter sincronizado com amigos e colegas para concluir as coisas mais rapidamente. É fácil trocar ideias e encontrar as maneiras mais eficazes de alcançar seus objetivos.",
+      "bullet1": "Mantenha-se no topo da sua lista de tarefas com o sistema de gerenciamento de tarefas personalizável do Fatodo!",
+      "bullet2": "Mantenha-se conectado com seus amigos e colegas por meio do chat e recursos de mensagens integrados ao Fatodo!",
+      "bullet3": "Colabore com outras pessoas e compartilhe tarefas com as ferramentas de gerenciamento de equipe do Fatodo!",
+      "paragraph2": "Então, por que esperar? Baixe o Fatodo hoje mesmo e comece a tomar controle da sua vida!"
+    },
+    "cards": {
+      "members": {
+        "title": "Como uma rede social, mas para alcançar objetivos",
+        "text": "Crie listas de tarefas, compartilhe-as e discuta o cumprimento delas em comentários e salas de chat."
+      },
+      "alarm": {
+        "title": "Defina prioridades e não se esqueça de nada",
+        "text": "Um sistema de alerta conveniente com notificações por e-mail e push lembrará você de datas e eventos importantes."
+      }
+    },
+    "bullets": {
+      "groups": {
+        "blueTitle": "É hora de fazer",
+        "yellowTitle": "o seu melhor",
+        "item1": "Crie listas de tarefas para você mesmo e planeje seu dia de maneira eficiente.",
+        "item2": "Compartilhe tarefas e realize-as mais rapidamente com amigos e colegas.",
+        "item3": "Troque ideias em comentários e mensagens, encontre maneiras eficazes de alcançar seus objetivos."
+      },
+      "calendar": {
+        "blueTitle": "Fácil e",
+        "yellowTitle": "compreensível",
+        "item1": "Nunca foi tão fácil lidar com listas de tarefas.",
+        "item2": "Classifique as tarefas por prioridade.",
+        "item3": "Controle a execução por meio do sistema de lembretes.",
+        "item4": "O mais importante sempre estará à sua vista."
+      }
+    },
+    "feedback": {
+      "title": "Formulário de Feedback",
+      "subtitle": "Gostaríamos de ouvir seus pensamentos, sugestões ou problemas com qualquer coisa para que possamos melhorar!",
+      "fields": {
+        "name": {
+          "title": "Nome",
+          "required": "Campo obrigatório."
+        },
+        "email": {
+          "title": "E-mail",
+          "email": "O campo deve ser um e-mail válido.",
+          "required": "Campo obrigatório."
+        },
+        "message": {
+          "title": "Mensagem",
+          "required": "Campo obrigatório."
+        }
+      },
+      "submit": "Enviar",
+      "snack": {
+        "success": "Sua mensagem foi enviada com sucesso. Obrigado!",
+        "error": "Erro ao enviar a mensagem, por favor, tente novamente."
+      }
+    },
+    "cookies-consent": {
+      "title": "Utilizamos apenas cookies necessários para proporcionar uma melhor experiência de navegação.",
+      "button": "Aceitar"
+    }
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "buttons": {
+    "login": "Anmelden",
+    "register": "Registrieren",
+    "join": "Kostenlos beitreten!"
+  },
+  "links": {
+    "termsOfUse": "Nutzungsbedingungen",
+    "privacyPolicy": "Datenschutzrichtlinie"
+  },
+  "index": {
+    "banner": {
+      "title1": "Die Plattform, die wichtige Aufgaben",
+      "title2": "im Blick behält",
+      "subtitle": "Fatodo ist eine kostenlose Web-, iOS- und Android-Anwendung, mit der Sie Aufgaben organisieren und gemeinsam mit Ihren Freunden und Teams daran arbeiten können."
+    },
+    "description": {
+      "greeting": "Willkommen bei Fatodo!",
+      "paragraph1": "Mit Fatodo, einer Aufgabenmanagement- und Kollaborations-App, können Sie Aufgaben einfach verfolgen, Termine planen und in Verbindung mit Freunden und Kollegen bleiben, um Dinge schneller zu erledigen. Sie können leicht Ideen austauschen und die effektivsten Wege finden, um Ihre Ziele zu erreichen.",
+      "bullet1": "Bleiben Sie mit Fatodos anpassbarem Aufgabenmanagement-System auf dem Laufenden!",
+      "bullet2": "Bleiben Sie über den integrierten Chat und Messaging-Funktionen von Fatodo mit Ihren Freunden und Kollegen in Kontakt!",
+      "bullet3": "Arbeiten Sie mit anderen zusammen und teilen Sie Aufgaben mit Fatodos Team-Management-Tools!",
+      "paragraph2": "Warum also warten? Laden Sie noch heute Fatodo herunter und übernehmen Sie die Kontrolle über Ihr Leben!"
+    },
+    "cards": {
+      "members": {
+        "title": "Wie ein soziales Netzwerk, aber für die Zielerreichung",
+        "text": "Erstellen Sie Aufgabenlisten, teilen Sie sie und diskutieren Sie ihre Erfüllung in Kommentaren und Chat-Räumen."
+      },
+      "alarm": {
+        "title": "Setzen Sie Prioritäten und vergessen Sie nichts",
+        "text": "Ein praktisches Benachrichtigungssystem mit E-Mail- und Push-Benachrichtigungen erinnert Sie an wichtige Termine und Ereignisse."
+      }
+    },
+    "bullets": {
+      "groups": {
+        "blueTitle": "Es ist Zeit,",
+        "yellowTitle": "Ihr Bestes zu geben",
+        "item1": "Erstellen Sie Aufgabenlisten für sich selbst und planen Sie Ihren Tag so effizient wie möglich.",
+        "item2": "Teilen Sie Aufgaben und erledigen Sie sie schneller zusammen mit Freunden und Kollegen.",
+        "item3": "Austausch von Ideen in Kommentaren und Nachrichten, finden Sie effektive Wege, um Ihre Ziele zu erreichen."
+      },
+      "calendar": {
+        "blueTitle": "Einfach und",
+        "yellowTitle": "verständlich",
+        "item1": "Aufgabenlisten waren noch nie so einfach zu handhaben.",
+        "item2": "Sortieren Sie Aufgaben nach Priorität.",
+        "item3": "Kontrollieren Sie die Ausführung mit dem Erinnerungssystem.",
+        "item4": "Das Wichtigste wird immer vor Ihren Augen bleiben."
+      }
+    },
+    "feedback": {
+      "title": "Feedback-Formular",
+      "subtitle": "Wir würden gerne Ihre Gedanken, Vorschläge oder Probleme zu allem hören, damit wir uns verbessern können!",
+      "fields": {
+        "name": {
+          "title": "Name",
+          "required": "Feld ist erforderlich."
+        },
+        "email": {
+          "title": "E-Mail",
+          "email": "Die Eingabe sollte eine korrekte E-Mail sein.",
+          "required": "Feld ist erforderlich."
+        },
+        "message": {
+          "title": "Nachricht",
+          "required": "Feld ist erforderlich."
+        }
+      },
+      "submit": "Absenden",
+      "snack": {
+        "success": "Ihre Nachricht wurde erfolgreich gesendet. Vielen Dank!",
+        "error": "Fehler beim Senden der Nachricht, bitte versuchen Sie es erneut."
+      }
+    },
+    "cookies-consent": {
+      "title": "Wir verwenden nur notwendige Cookies, um Ihnen ein besseres Browsing-Erlebnis zu bieten.",
+      "button": "Akzeptieren"
+    }
+  }
+}
